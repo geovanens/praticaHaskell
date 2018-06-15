@@ -5,8 +5,8 @@ printElements (x:xs) = do putStrLn x
                           
 headVogal :: String -> String
 headVogal word
-    | elem (head word) ['a', 'e', 'i', 'o', 'u'] = "S"
-    | otherwise = "N"
+    | head word == 'a' = "s"
+    | otherwise = "n"
 
 main = do
     w1 <- getLine
